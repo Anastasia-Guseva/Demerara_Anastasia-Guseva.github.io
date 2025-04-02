@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    
+    line-height: 1.4;       /* Міжрядковий інтервал основного тексту в %/100 */
+    letter-spacing: .002em; /* Міжлітерний інтервал основного тексту збільшений на 2/1000 Em */
+    scroll-behavior: smooth;
+   
+}
+h1{
+    font-family: 'UAF Memory VF';
+    color: white;
+    text-align: center;
+    margin-top:  1.2em;
+    letter-spacing: 0.5dvh;
+    font-size: 160px;
+    font-weight: 400;
+
+}
+h2{
+    font-family: 'Fixel Display';
+    color: white;
+    letter-spacing: 0 0.5em;
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 10em;
+    text-align: center;
+}

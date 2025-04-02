@@ -1,0 +1,22 @@
+
+
+.header{
+    font-family: 'Fixel Display';
+    color: white;
+    font-size: 17px;
+    margin-top: 20px;
+    
+
+   
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex; /* Делаем список горизонтальным */
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+

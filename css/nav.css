@@ -1,0 +1,40 @@
+nav{
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    width: 100%;
+    z-index: 95;
+    top: 30px;
+}
+
+nav.topfixed {
+    background: var(--bg-nav-1);
+    position: fixed;
+    
+}
+
+nav::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateY(-100%);
+}
+
+nav.topfixed::before {
+    transform: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;     /* Схема вирівнювання лого та меню (desktop) по основній осі (main axis) */
+    align-items: center;                /* Схема вирівнювання лого та меню (desktop) по додатковій осі (cross axis) */
+    margin-left: auto;                  /* Центрування блоку всередині nav по-горизонталі */
+    margin-right: auto;                 /* Центрування блоку всередині nav по-горизонталі */
+    max-width: var(--max-width);        /* Ширина .nav-inside не більше 1280px */
+    padding: var(--mob-padding);        /* Внутрішні відступи */
+    position: relative;
+    transition: all .3s ease-in-out;
+}

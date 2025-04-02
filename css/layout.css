@@ -1,0 +1,39 @@
+/* layout.css — Загальна структура сторінки         */
+
+
+/* Початок блоку змінних проєкту */
+
+    
+    
+
+.wrapper {
+    display: flex;
+    flex-direction:column;
+    min-height: 100dvh;
+    margin-left: auto;  /* Центрування блочного елементу по-горизонталі */
+    margin-right: auto; /* Центрування блочного елементу по-горизонталі */
+    padding: 0;         /* Внутнішній відступ для блочного елементу */
+    position: relative;
+}
+
+.container {
+    padding-left: var(--mob-padding);
+    padding-right: var(--mob-padding);
+    min-height: 100dvh;  /* УВАГА!!! Мінімальна висота секцій 100% висоти в'юпорта */
+}
+
+.container > .inside {  /* Direct child .inside in .container */
+    margin: auto;       /* Центрування по-горизонталі */
+    padding-top: var(--ver-padding);
+    padding-bottom: var(--ver-padding);
+    max-width: var(--max-width);
+}
+
+header.container > .inside {  
+    padding-top: 0;
+}
+
+footer {
+    margin-top: auto;
+    min-height: 100px;
+}
