@@ -1,15 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    background-image: url(../img/background.jpg);
-    background-size: cover;
-    
-    line-height: 1.4;       /* Міжрядковий інтервал основного тексту в %/100 */
-    letter-spacing: .002em; /* Міжлітерний інтервал основного тексту збільшений на 2/1000 Em */
-    scroll-behavior: smooth;
-   
+    box-sizing: border-box;
+    font-family: 'Fixel Display';
 }
+
+    .hero{
+     background-image: url('img/background.jpg');
+     background-size: cover;
+    }
+    
+
 h1{
     font-family: 'UAF Memory VF';
     color: white;
